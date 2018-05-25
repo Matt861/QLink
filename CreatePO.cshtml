@@ -1,0 +1,204 @@
+﻿
+@{
+    ViewBag.Title = "CreatePO";
+}
+
+<!DOCTYPE html>
+<html>
+<head id="Head1">
+    <title>
+        Create Product Order
+    </title>
+    <link rel="stylesheet" href="~/Content/Site.css" />
+    <style type="text/css">
+
+        .formTitle {
+            font-size: 20px;
+        }
+
+        form {
+            border: groove;
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 0 5px;
+        }
+
+        input {
+            width: 300px;
+        }
+
+        .submitBtn {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form name="POform" method="post" action="./" id="">
+        <div class="templateContent">
+            <div class="Header">
+                <img src="~/Content/Images/x-small-logo.jpg" />
+            </div>
+            <div class="formTitle" align="center">
+                <bold>Create Product Order</bold>
+            </div>
+            <br />
+            <br />
+            <div class="content" style="margin-left" : 100px;">
+                <table border="0" align="center" cellspacing="0" cellpadding="3" style="width: 500px;">
+                    <tbody>
+                        <tr>
+                            <td style="white-space: nowrap; width: 200px;"></td>
+                        </tr>
+                        <tr>
+                            <td>Client:</td>
+                            <td>
+                                <input name="textClientName" type="text" id="textClientName" placeholder="Enter client name..." />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PO Number:</td>
+                            <td>
+                                <input name="textPONumber" type="text" placeholder="Enter PO number..." id="textPONumber" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PO Date:</td>
+                            <td>
+                                <input name="datePickerPO" type="date" id="datePickerPO" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Factory Name:</td>
+                            <td>
+                                <input name="textFactoryName" type="text" placeholder="Enter factory name..." id="textFactoryName" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Factory Name - 2nd Language:</td>
+                            <td>
+                                <select>
+                                    <option value="" disabled="disabled" selected="selected">Please select a language</option>
+                                    <option value="1">Chinese</option>
+                                    <option value="2">Vietnamese</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Factory Address:</td>
+                            <td>
+                                <input name="textFactoryAddress" type="text" placeholder="Enter factory address..." id="textFactoryAddress" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Factory Address - 2nd Language:</td>
+                            <td>
+                                <select>
+                                    <option value="" disabled="disabled" selected="selected">Please select a language</option>
+                                    <option value="1">Chinese</option>
+                                    <option value="2">Vietnamese</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Factory Contact:</td>
+                            <td>
+                                <input name="textFactoryContact" type="text" placeholder="Enter factory contact..." id="textFactoryContact" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Factory Contact - 2nd Language:</td>
+                            <td>
+                                <select>
+                                    <option value="" disabled="disabled" selected="selected">Please select a language</option>
+                                    <option value="1">Chinese</option>
+                                    <option value="2">Vietnamese</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Shipping Date:</td>
+                            <td>
+                                <input name="datePickerShipping" type="date" id="datePickerShipping" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Port:</td>
+                            <td>
+                                <input name="textPort" type="text" placeholder="Enter port..." id="textPort" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Style/Unit Number:</td>
+                            <td>
+                                <input name="textStyleNum" type="text" placeholder="Enter style/unit number..." id="textStyleNum" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Vender/Factory Item Number:</td>
+                            <td>
+                                <input name="textVenderNum" type="text" placeholder="Enter vendor number..." id="textVendorNum" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>UOM (Unit Of Measure):</td>
+                            <td>
+                                <input name="textUOM" type="text" placeholder="Enter unit of measurement..." id="textUOM" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Quantity:</td>
+                            <td>
+                                <input name="textQuantity" type="text" placeholder="Enter quantity..." id="textQuantity" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ship Date:</td>
+                            <td>
+                                <input name="datePickerShip" type="date" id="datePickerShip" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ship to Company:</td>
+                            <td>
+                                <input name="textCTS" type="text" placeholder="Enter company..." id="textCTS" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Street:</td>
+                            <td>
+                                <input name="textStreet" type="text" placeholder="Enter street..." id="textStreet" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>City:</td>
+                            <td>
+                                <input name="textCity" type="text" placeholder="Enter city..." id="textCity" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>State/Province:</td>
+                            <td>
+                                <input name="textState" type="text" placeholder="Enter State/Province..." id="textState" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Postal Code:</td>
+                            <td>
+                                <input name="textPostal" type="text" placeholder="Enter postal code..." id="textCode" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br />
+            <br />
+            <div align="center">
+                <input type="submit" value="SUBMIT" style="width: 200px; height: 50px;" />
+            </div>
+            <br />
+        </div>
+    </form>
+</body>
+</html>
